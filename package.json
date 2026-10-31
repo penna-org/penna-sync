@@ -1,0 +1,44 @@
+{
+  "name": "penna-sync",
+  "type": "module",
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.25.0",
+  "private": true,
+  "description": "Penna（羽笔）浏览器扩展的自部署同步服务：配置与文档多设备同步，SQLite 单文件存储，无需注册登录",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penna-org/penna-sync.git"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "haze dev",
+    "build": "haze build",
+    "start": "node scripts/start.mjs",
+    "test": "haze test",
+    "routes": "haze route:list",
+    "typecheck": "tsc --noEmit",
+    "typegen": "haze typegen",
+    "db:generate": "haze db:generate",
+    "db:migrate": "haze db:migrate"
+  },
+  "dependencies": {
+    "@hazejs/core": "^1.0.0",
+    "@hazejs/orm": "^1.0.0",
+    "@libsql/client": "^0.18.0",
+    "drizzle-orm": "^0.45.4",
+    "valibot": "^1.1.0"
+  },
+  "devDependencies": {
+    "@hazejs/cli": "^1.0.0",
+    "@hazejs/testing": "^1.0.0",
+    "@hazejs/vite": "^1.0.0",
+    "@types/node": "^24.0.0",
+    "drizzle-kit": "^0.31.11",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}

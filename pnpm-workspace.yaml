@@ -1,0 +1,3 @@
+# pnpm 11：依赖的安装脚本需要显式允许或忽略（新增需要构建的依赖时在此声明）
+allowBuilds:
+  esbuild: false
